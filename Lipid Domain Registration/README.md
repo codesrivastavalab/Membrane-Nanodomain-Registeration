@@ -87,3 +87,12 @@
   2 indicates anti-registration, 3 indicates partial anti-registration, 4 indicates an unregistered system, 5 indicates partial registration, and 6 indicates registration.
   
   These plain text files can then be used for plotting parameter space plots or any other analysis as required.
+  
+3. Plotting programs in python
+
+  Finally, "Domain Registration Plots.py" and "Phase Separation Plots.py" are python programs used to generate the parameter space plots. The outer axes as seen in our 
+  manuscript were added in manually with Photoshop. 
+  Running these programs correctly requires the files "Regstate.txt" and "PSstate.txt" respectively in the working directory.
+  
+  The python program ".py" creates the visualizations of configurations from the config files. To run this program, the config file must be in the working directory
+  without any modifications. Multiple configuration files can be visualized in one go. For this, the file names must be typed in correctly in the input array in the program.
