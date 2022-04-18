@@ -84,15 +84,25 @@
   2.048000 0.060000 0.005000 8.000000 8.000000 8.000000 4.000000 4.000000 4.000000 4
   The program also outputs a file "Regstate.txt" in which each row contains the parameters of a point from the parameter space, followed by the average D_KL of
   that point, followed by an integer from 2-6.
-  2 indicates anti-registration, 3 indicates partial anti-registration, 4 indicates an unregistered system, 5 indicates partial registration, and 6 indicates registration.
+  2 indicates anti-registration, 3 indicates partial anti-registration, 4 indicates an unregistered system, 5 indicates partial registration, and 6 indicates 
+  registration.
   
   These plain text files can then be used for plotting parameter space plots or any other analysis as required.
   
 3. Plotting programs in python
 
-  Finally, "Domain Registration Full Plots.py" and "Phase Separation Full Plots.py" are python programs used to generate the parameter space plots. The outer axes as seen in our 
-  manuscript were added in manually with Photoshop. 
+  The programs "Domain Registration Parameter Plots.py" and "Phase Separation Parameter Plots.py" require the "Regstate.txt" and "PSstate.txt" files respectively in 
+  the working directory to function.
+  The "Domain Registration Parameter Plots.py" program outputs three plots:
+    i. A combined plot with three bar graphs, one each for registration state populations vs values of V_AA, V_BB, and V_AB.
+    ii. A combined plot with three bar graphs, one each for varying parameter space point populations vs values of V'_AA, V'_BB, and V'_AB.
+    iii. A plot of varying parameter space point populations vs values of V'_S
+  The "Phase Separation Parameter Plots.py" program outputs similar plots for phase separation state populations.
+
+  Finally, "Domain Registration Full Plots.py" and "Phase Separation Full Plots.py" are python programs used to generate the full parameter space plots. The outer 
+  axes, as seen in our manuscript's supplementary material, were added in manually with Photoshop. 
   Running these programs correctly requires the files "Regstate.txt" and "PSstate.txt" respectively in the working directory.
   
-  The python program ".py" creates the visualizations of configurations from the config files. To run this program, the config file must be in the working directory
-  without any modifications. Multiple configuration files can be visualized in one go. For this, the file names must be typed in correctly in the input array in the program.
+  The python program "Config Visualization.py" creates the visualizations of configurations from the config files. To run this program, the config file must be in the 
+  working directory without any modifications. Multiple configuration files can be visualized in one go. For this, the file names must be typed in correctly in the 
+  input array in the program.
