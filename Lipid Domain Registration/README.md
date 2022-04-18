@@ -90,7 +90,7 @@
   
 3. Plotting programs in python
 
-  Finally, "Domain Registration Plots.py" and "Phase Separation Plots.py" are python programs used to generate the parameter space plots. The outer axes as seen in our 
+  Finally, "Domain Registration Full Plots.py" and "Phase Separation Full Plots.py" are python programs used to generate the parameter space plots. The outer axes as seen in our 
   manuscript were added in manually with Photoshop. 
   Running these programs correctly requires the files "Regstate.txt" and "PSstate.txt" respectively in the working directory.
   
